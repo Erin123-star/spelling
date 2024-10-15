@@ -1,6 +1,7 @@
 body {
     text-align: center;
     font-family: Arial, sans-serif;
+    touch-action: manipulation; /* 确保触摸操作响应 */
 }
 
 #radical {
@@ -26,8 +27,8 @@ body {
     transition: transform 0.3s ease;
 }
 
-.character:hover {
-    transform: scale(1.2);
+.character:active {
+    transform: scale(1.2); /* 点击时放大效果 */
 }
 
 #score {
